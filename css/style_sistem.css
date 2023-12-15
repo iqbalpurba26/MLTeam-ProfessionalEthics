@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo&family=Alice&family=Arima+Madurai&family=Bree+Serif&family=Coustard&family=El+Messiri:wght@500&family=Lobster+Two&family=Merienda:wght@700&family=Pacifico&family=Philosopher:wght@400;700&family=Poppins&family=Zilla+Slab:wght@500&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    background-color: #cadef3;
+  }
+  
+body .container {
+    padding: 30px 30px;
+    border-radius: 20px;
+    background-color: #fefefe;
+    margin-top: 30px;
+    width: 100vh;
+}
+
+body .container h3{
+  color:#5893D4 ;
+  font-weight: bolder;
+}
+
+body .container form{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+body .container button.btn {
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #5893D4;
+  font-weight: bold;
+  color: #fefefe;
+}
+
+body .container form input#nama_sistem {
+  margin-bottom: 20px;
+}
+
+body .container a#back_dashboard{
+  text-decoration: none;
+  background-color: #5893D4;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 20px;
+}

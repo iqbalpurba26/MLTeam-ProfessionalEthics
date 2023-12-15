@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo&family=Alice&family=Arima+Madurai&family=Bree+Serif&family=Coustard&family=El+Messiri:wght@500&family=Lobster+Two&family=Merienda:wght@700&family=Pacifico&family=Philosopher:wght@400;700&family=Poppins&family=Zilla+Slab:wght@500&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  background: #5893D4;
+  padding: 20px;
+  width: 100%;
+  height: 30px;
+}
+
+.left_area h3 {
+  color: #fff;
+  margin: 0;
+  font-size: 22px;
+  font-weight: 900;
+  text-align: center;
+  font-family: "Philosopher", sans-serif;
+}
+
+#btn {
+  padding: 5px;
+  float: right;
+  color: #fff;
+  margin-top: -28px;
+  font-size: 20px;
+  margin-right: 40px;
+}
+
+#btn:hover {
+  cursor: pointer;
+}
+
+#admin {
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  border-top: 1px solid #fefe;
+  border-bottom: 1px solid #fefe;
+  text-align: center;
+
+}
+
+.sidebar {
+  background: #5893D4;
+  padding-top: 30px;
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  margin-top: 70px;
+  transition: all 0.5s ease;
+  font-family: "El Messiri", sans-serif;
+  overflow-y: auto;
+}
+
+.logo_profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar.active p{
+  margin-left: 190px;
+}
+
+.sidebar.active p span{
+  display: none;
+}
+
+.sidebar.active {
+  left: -190px;
+  transition: all 0.5s ease;
+}
+.sidebar .logo {
+  margin-bottom: 10px;
+  transition: all 0.5s ease;
+
+
+}
+.sidebar.active .logo {
+  display: none;
+  transition: all 0.1s ease;
+}
+
+.sidebar a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  line-height: 55px;
+  text-decoration: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+.sidebar a span {
+  font-family: "El Messiri", sans-serif;
+}
+
+.sidebar.active a {
+  font-size: 20px;
+  margin-left: 170px;
+  width: 80%;
+  transition: all 0.5s ease;
+}
+
+
+.sidebar.active a span {
+  display: none;
+  transition: all 0.5s ease;
+}
+
+.sidebar a:hover {
+  background: #9ACEFF;
+  border-radius: 10px;
+  color: rgb(68, 68, 68);
+}
+
+.sidebar.active a:hover {
+  border-radius: 0px;
+  padding-right: 0px;
+}
+
+.sidebar i {
+  padding-right: 10px;
+}
+
+.sidebar #logout {
+  color: rgb(233, 41, 20);
+}
+
+
+.content {
+  padding-top: 80px;
+  padding-left: 270px;
+  margin-right: 25px;
+  transition: all 0.5s ease;
+  text-align: justify;
+}
+
+
+.sidebar.active ~ .content {
+  padding-left: 80px;
+  transition: all 0.5s ease;
+}
+
+
+.sidebar.active ~ .content {
+  left: 280px;
+  transition: all 0.5s ease;
+}
+
+.content  {
+  justify-content: center;
+}
+
+
+.content #sapaan {
+    font-family: "Philosopher", sans-serif;
+    font-size: 50px;
+}
+
+.sidebar.active ~ .content {
+    padding-left: 80px;
+    transition: all 0.5s ease;
+}
+  
+  
+.sidebar.active ~ .content {
+    left: 280px;
+    transition: all 0.5s ease;
+}
+
+.content .menu {
+    margin-left: 30px;
+    margin-right: 10px;
+    padding: 10px 10px;
+    padding-right: 20px;
+    margin-top: 50px;
+    width: 330px;
+    border-radius: 10px;
+    background-color: #5893D4;
+    color: #fff;
+    font-family: 'El Messiri', sans-serif;
+}
+
+.content .menu .akhir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px 5px;
+    background-color: #9ACEFF;
+    width: 100%;
+    margin: 0;
+    
+  }
+
+.content .menu a{
+    text-decoration: none;
+    color: #000;
+}
+
+.content .tabel_aksi {
+  text-align: center;
+}
+.content .tabel_aksi a {
+  text-decoration: none;
+  font-family: "El Messiri", sans-serif;
+  
+}
+
+
+.content #tbl-ubah {
+  background-color: #098c55;
+  padding: 4px 10px;
+  border-radius: 5px;
+  color: #fff;
+
+}
+
+.content a#setuju{
+  margin-bottom: 200px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
+  .sidebar {
+    display: none;
+  }
+
+  .left_area h3 {
+    text-align: left;
+  }
+
+
+  .sidebar.active ~ .sidebar_mobile {
+    display: block;
+  }
+
+  .content {
+    padding-top: 60px;
+    padding-left: 20px;
+    margin-right: 20px;
+    transition: all 0.5s ease;
+    text-align: justify;
+  }
+  .sidebar.active ~ .content {
+    padding-left: 20px;
+    transition: all 0.5s ease;
+  }
+
+  .sidebar.active ~ .content a {
+    pointer-events: none;
+  }
+}

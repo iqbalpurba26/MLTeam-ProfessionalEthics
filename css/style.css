@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Poppins&family=Righteous&family=Silkscreen&family=Source+Serif+Pro&family=ZCOOL+XiaoWei&family=Zilla+Slab:wght@500&display=swap');
+
+*{
+    font-family: 'Philosopher', sans-serif;
+    overflow-x: hidden;
+}
+#navBarP {
+    background-color: #5893D4;    
+}
+
+#navBarP .container ul li a:hover{
+    background-color:#9ACEFF ;
+    border-radius: 5px;
+    
+}
+
+.carousel1 {
+    margin-top: 100px;
+    margin-bottom: 10%;
+}
+
+
+
+
+#judul {
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+
+div.periksa#periksa a {
+    text-decoration: none;
+    color: #fff;
+}
+
+div.periksa#periksa {
+    background-color: #5893D4;
+    width: 320px;
+    padding:10px 10px;
+    border-radius: 20px;
+}
+
+div.periksa#periksa:hover {
+    background-color: #9ACEFF;
+    width: 320px;
+    padding:10px 10px;
+    border-radius: 20px;
+}
+
+#about {
+    padding-top: 15%;
+}
+
+#judulBesar {
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+#our {
+    padding-top: 15%;
+}
+
+#team1 {
+    margin-left: 200px;
+}
+
+#team2{
+    align-items: flex-end;
+}
+
+#btnProfile {
+    background-color: #5893D4;
+    color: rgb(255, 254, 254);
+}
+
+#btnProfile:hover {
+    background-color: #9ACEFF;
+    color: rgb(255, 254, 254);
+    color: black;
+}
+
+h5.card-title{
+    font-weight: bolder;
+}
+
+
+#contact {
+    padding-top: 200px;
+}
+section#footer {
+    text-align: center;
+    background-color:#5893D4;
+    font-size: 18px;
+    color: whitesmoke;
+    padding: 10px 10px;
+}
