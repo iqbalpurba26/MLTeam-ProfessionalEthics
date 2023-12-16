@@ -33,33 +33,33 @@ $id_sistem = $_SESSION['id_sistem'];
 
         <div class="mb-3">
             <label for="komponen_data1" class="form-label">Bagaimana Anda Mengumpulkan Data?</label>
-            <textarea class="form-control" name="komponen_data1" id="komponen_data1" rows="3" placeholder="cont: Menggunakan survey dari ..."></textarea>
+            <textarea required class="form-control" name="komponen_data1" id="komponen_data1" rows="3" placeholder="cont: Menggunakan survey dari ..."></textarea>
         </div>
 
 
         <div class="mb-3">
             <label for="komponen_data2" class="form-label">Data Apa Yang Anda Kumpulkan</label>
-            <textarea class="form-control" name="komponen_data2" id="komponen_data2" rows="3" placeholder="cont: Data teks berupa nama, ..."></textarea>
+            <textarea required class="form-control" name="komponen_data2" id="komponen_data2" rows="3" placeholder="cont: Data teks berupa nama, ..."></textarea>
         </div>
 
         <div class="mb-3">
             <label for="komponen_data3" class="form-label">Link Surat Izin Persetujuan Pengumpulan Data</label>
-            <input type="text" name="komponen_data3" class="form-control" id="komponen_data3" rows="3" placeholder="Link Google Drive">
+            <input required type="text" name="komponen_data3" class="form-control" id="komponen_data3" rows="3" placeholder="Link Google Drive">
         </div>
 
 
         <div class="col-md-6">
             <label for="komponen_data4" class="form-label">Data Training : Data Testing</label>
-            <input type="teks" name="komponen_data4" class="form-control" id="komponen_data4" placeholder="60%:40%">
+            <input required type="teks" name="komponen_data4" class="form-control" id="komponen_data4" placeholder="60%:40%">
         </div>
         <div class="col-md-6">
             <label for="komponen_data5" class="form-label">Total Data</label>
-            <input type="teks" name="komponen_data5"class="form-control" id="komponen_data5" placeholder="15000">
+            <input required type="teks" name="komponen_data5"class="form-control" id="komponen_data5" placeholder="15000">
         </div>
 
         <div class="mb-3">
             <label for="komponen_data6" class="form-label">Link Proses Cleaning Data</label>
-            <input type="text" name="komponen_data6" class="form-control" id="komponen_data6" rows="3" placeholder="Link Google Drive">
+            <input required type="text" name="komponen_data6" class="form-control" id="komponen_data6" rows="3" placeholder="Link Google Drive">
         </div>
 
     <div class="d-grid gap-2">

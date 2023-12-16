@@ -34,18 +34,18 @@ $id_sistem = $_SESSION['id_sistem'];
 
         <div class="mb-3">
             <label for="komponen_model1" class="form-label">Berapa Epoch Yang Anda Gunakan?</label>
-            <input class="form-control" name="komponen_model1" id="komponen_model1" rows="3" placeholder="cont: 20">
+            <input required class="form-control" name="komponen_model1" id="komponen_model1" rows="3" placeholder="cont: 20">
         </div>
 
 
         <div class="mb-3">
             <label for="komponen_model2" class="form-label">Berapa Batch Size Yang Anda Gunakan?></label>
-            <input class="form-control" name="komponen_model2" id="komponen_model2" rows="3" placeholder="cont: 20">
+            <input required class="form-control" name="komponen_model2" id="komponen_model2" rows="3" placeholder="cont: 20">
         </div>
 
         <div class="mb-3">
             <label for="komponen_model3" class="form-label">Apakah Anda Menggunakan Callback</label>
-            <select class="form-select" name ="komponen_model3"  id="komponen_model3" aria-label="Default select example">
+            <select required class="form-select" name ="komponen_model3"  id="komponen_model3" aria-label="Default select example">
                 <option selected>Pilih</option>
                 <option value="iya">Iya</option>
                 <option value="tidak">Tidak</option>
@@ -54,12 +54,12 @@ $id_sistem = $_SESSION['id_sistem'];
 
         <div class="mb-3">
             <label for="komponen_model4" class="form-label">Berapa Akurasi Yang Diperoleh?</label>
-            <input type="text" name="komponen_model4" class="form-control" id="komponen_model4" rows="3" placeholder="cont:90%">
+            <input required type="text" name="komponen_model4" class="form-control" id="komponen_model4" rows="3" placeholder="cont:90%">
         </div>
 
         <div class="mb-3">
             <label for="komponen_model5" class="form-label">Link Pelatihan Model</label>
-            <input type="text" name="komponen_model5" class="form-control" id="komponen_model5" rows="3" placeholder="Link Google Drive">
+            <input required type="text" name="komponen_model5" class="form-control" id="komponen_model5" rows="3" placeholder="Link Google Drive">
         </div>
 
     <div class="d-grid gap-2">

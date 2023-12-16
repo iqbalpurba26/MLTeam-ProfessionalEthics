@@ -33,7 +33,7 @@ $id_sistem = $_SESSION['id_sistem'];
 
         <div class="mb-3">
             <label for="komponen_laporan1" class="form-label">Link Laporan Hasil Deployment</label>
-            <input type="text" name="komponen_laporan1" class="form-control" id="komponen_laporan1" placeholder="Link Google Drive">
+            <input required type="text" name="komponen_laporan1" class="form-control" id="komponen_laporan1" placeholder="Link Google Drive">
         </div>
 
     <div class="d-grid gap-2">

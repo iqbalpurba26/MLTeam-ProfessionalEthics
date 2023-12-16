@@ -34,23 +34,23 @@ $id_sistem = $_SESSION['id_sistem'];
 
         <div class="mb-3">
             <label for="komponen_algoritma1" class="form-label">Apa saja variabel dependen Anda?</label>
-            <textarea class="form-control" name="komponen_algoritma1" id="komponen_algoritma1" rows="3" placeholder="cont: Umur, jenis kelamin,.."></textarea>
+            <textarea required class="form-control" name="komponen_algoritma1" id="komponen_algoritma1" rows="3" placeholder="cont: Stroke ... "></textarea>
         </div>
 
 
         <div class="mb-3">
             <label for="komponen_algoritma2" class="form-label">Apa Variabel Independen Anda></label>
-            <input class="form-control" name="komponen_algoritma2" id="komponen_algoritma2" rows="3" placeholder="cont: diabetes">
+            <input required class="form-control" name="komponen_algoritma2" id="komponen_algoritma2" rows="3" placeholder="cont: umur, jenis kelamin, ...">
         </div>
 
         <div class="mb-3">
             <label for="komponen_algoritma3" class="form-label">Algoritma Apa yang Anda Pakai?</label>
-            <input type="text" name="komponen_algoritma3" class="form-control" id="komponen_algoritma3" rows="3" placeholder="cont: Support Vector Machine">
+            <input required type="text" name="komponen_algoritma3" class="form-control" id="komponen_algoritma3" rows="3" placeholder="cont: Support Vector Machine">
         </div>
 
         <div class="mb-3">
             <label for="komponen_algoritma4" class="form-label">Link Proses Pembentukan Model Algoritma</label>
-            <input type="text" name="komponen_algoritma4" class="form-control" id="komponen_algoritma4" rows="3" placeholder="Link Google Drive">
+            <input required type="text" name="komponen_algoritma4" class="form-control" id="komponen_algoritma4" rows="3" placeholder="Link Google Drive">
         </div>
 
     <div class="d-grid gap-2">

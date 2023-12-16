@@ -32,15 +32,15 @@ $id_sistem = $_SESSION['id_sistem'];
 
           <div class="mb-3">
               <label for="komponen_hasil1" class="form-label">Link Screenshot Pengujian Model</label>
-              <input class="form-control" name="komponen_hasil1" id="komponen_hasil1" rows="3" placeholder="Link Google Drive">
+              <input required class="form-control" name="komponen_hasil1" id="komponen_hasil1" rows="3" placeholder="Link Google Drive">
           </div>
 
 
           <div class="mb-3">
               <label for="komponen_hasil2" class="form-label">Apakah Hasilnya Akurat?</label>
-              <select class="form-select" name ="komponen_hasil2"  id="komponen_hasil2" aria-label="Default select example">
+              <select required class="form-select" name ="komponen_hasil2"  id="komponen_hasil2" aria-label="Default select example">
                   <option selected>Pilih</option>
-                  <option value="iya">Iya</option>
+                  <option  value="iya">Iya</option>
                   <option value="tidak">Tidak</option>
               </select>
           </div>
@@ -48,12 +48,12 @@ $id_sistem = $_SESSION['id_sistem'];
 
           <div class="mb-3">
               <label for="komponen_hasil3" class="form-label">Link Pengujian Model></label>
-              <input class="form-control" name="komponen_hasil3" id="komponen_hasil3" rows="3" placeholder="Link Google Drive/Colab">
+              <input required class="form-control" name="komponen_hasil3" id="komponen_hasil3" rows="3" placeholder="Link Google Drive/Colab">
           </div>
 
           <div class="mb-3">
-              <label for="komponen_hasil4" class="form-label">Link Model></label>
-              <input class="form-control" name="komponen_hasil4" id="komponen_hasil4" rows="3" placeholder="Link Google Drive/Colab">
+              <label for="komponen_hasil4" class="form-label">Link Model</label>
+              <input required class="form-control" name="komponen_hasil4" id="komponen_hasil4" rows="3" placeholder="Link Google Drive/Colab">
           </div>
 
       

@@ -32,24 +32,24 @@ $id_sistem = $_SESSION['id_sistem'];
         <input type="hidden"name="id_sistem" class="form-control" id="id_sistem" value="<?php echo $id_sistem ?>">
         <div class="mb-3">
             <label for="komponen_deploy1" class="form-label">Kemana Model Di Deloyment?</label>
-            <input type="text" name="komponen_deploy1" class="form-control" id="komponen_deploy1" placeholder="cont: Website">
+            <input required type="text" name="komponen_deploy1" class="form-control" id="komponen_deploy1" placeholder="cont: Website">
         </div>
 
 
         <div class="mb-3">
             <label for="komponen_deploy2" class="form-label">Link Screenshot Tampilan Deployemnt(Web/Apps)</label>
-            <input class="form-control" name="komponen_deploy2" id="komponen_deploy2" rows="3" placeholder="Link Google Drive">
+            <input required class="form-control" name="komponen_deploy2" id="komponen_deploy2" rows="3" placeholder="Link Google Drive">
         </div>
 
         <div class="mb-3">
             <label for="komponen_deploy3" class="form-label">Bagaimana Hasil Pengujian Setelah Deployment?</label>
-            <input type="text" name="komponen_deploy3" class="form-control" id="komponen_deploy3" rows="3" placeholder="cont: Setelah Deploy, hasilnya menjadi tidak akurat/akurat..">
+            <input required type="text" name="komponen_deploy3" class="form-control" id="komponen_deploy3" rows="3" placeholder="cont: Setelah Deploy, hasilnya menjadi tidak akurat/akurat..">
         </div>
 
 
         <div class="mb-3">
             <label for="komponen_deploy4" class="form-label">Bagaimana Performa Prediksi Model?</label>
-            <textarea type="text" name="komponen_deploy4" class="form-control" id="komponen_deploy4" rows="3" placeholder="cont: Model memprediksi sangat lama/cepat .... "></textarea>
+            <textarea required type="text" name="komponen_deploy4" class="form-control" id="komponen_deploy4" rows="3" placeholder="cont: Model memprediksi sangat lama/cepat .... "></textarea>
         </div>
 
     <div class="d-grid gap-2">

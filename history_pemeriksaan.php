@@ -14,7 +14,7 @@ $item = query("SELECT *
 FROM sistem
 INNER JOIN latarbelakang_sistem ON sistem.id_sistem = latarbelakang_sistem.id_sistem
 INNER JOIN hasil_akhir ON sistem.id_sistem = hasil_akhir.id_sistem 
-WHERE hasil_akhir.status = 'DISETUJUI' ");
+WHERE hasil_akhir.status != 'DALAM PROSES'");
 
 ?>
 
@@ -69,18 +69,18 @@ WHERE hasil_akhir.status = 'DISETUJUI' ");
             <th style="text-align:center">Aksi</th>
         </thead>
 
-        <tbody>
+        <tbody >
             <?php $i=1 ?>
 
            <?php foreach($item as $it) : ?>
             <tr>
-                <td style="text-align:center"><?php echo $i ?></td>
-                <td style="text-align:center"><?php echo $it["nama_sistem"]?></td>
-                <td style="text-align:center"><?php echo $it["organisasi"]?></td>
-                <td style="text-align:center"><?php echo $it["nama_penanggungjawab"]?></td>
-                <td style="text-align:center"><?php echo $it["email"]?></td>
-                <td  class="tabel_aksi" style="text-align:center">
-                    <a href="cek_pengajuan.php?id_sistem=<?php echo $it["id_sistem"]; ?>" id="tbl-ubah"><i class="fa-solid fa-pen-to-square"></i>Periksa</a>
+                <td style="text-align:center; padding-top:20px" ><?php echo $i ?></td>
+                <td style="text-align:center; padding-top:20px"><?php echo $it["nama_sistem"]?></td>
+                <td style="text-align:center; padding-top:20px"><?php echo $it["organisasi"]?></td>
+                <td style="text-align:center; padding-top:20px"><?php echo $it["nama_penanggungjawab"]?></td>
+                <td style="text-align:center; padding-top:20px"><?php echo $it["email"]?></td>
+                <td  class="tabel_aksi" style="text-align:center; padding-top:20px">
+                    <a href="lihat_history.php?id_sistem=<?php echo $it["id_sistem"]; ?>" id="tbl-ubah"><i class="fa-solid fa-pen-to-square"></i>Lihat</a>
                 </td>
             </tr>
             <?php $i++; ?>

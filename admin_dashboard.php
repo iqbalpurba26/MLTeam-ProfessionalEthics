@@ -14,7 +14,7 @@ $item = query("SELECT *
 FROM sistem
 INNER JOIN latarbelakang_sistem ON sistem.id_sistem = latarbelakang_sistem.id_sistem
 INNER JOIN hasil_akhir ON sistem.id_sistem = hasil_akhir.id_sistem 
-WHERE hasil_akhir.status != 'DISETUJUI' ");
+WHERE hasil_akhir.status = 'DALAM PROSES' ");
 
 ?>
 

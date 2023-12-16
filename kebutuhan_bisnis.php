@@ -32,24 +32,24 @@ $id_sistem = $_SESSION['id_sistem'];
         <input type="hidden" name="id_sistem" class="form-control" id="id_user" value="<?php echo $id_sistem ?>">
         <div class="mb-3">
             <label for="komponen_bisnis1" class="form-label">Sistem Bergerak Dibidang Apa?</label>
-            <input type="text" name="komponen_bisnis1" class="form-control" id="komponen_bisnis1" placeholder="cont: Kesehatan">
+            <input required type="text" name="komponen_bisnis1" class="form-control" id="komponen_bisnis1" placeholder="cont: Kesehatan">
         </div>
 
 
         <div class="mb-3">
             <label for="komponen_bisnis2" class="form-label">Ceritakan Megenai Sistem Anda</label>
-            <textarea class="form-control" name="komponen_bisnis2" id="komponen_bisnis2" rows="3" placeholder="cont: Bisnis kami adalah..."></textarea>
+            <textarea required class="form-control" name="komponen_bisnis2" id="komponen_bisnis2" rows="3" placeholder="cont: Bisnis kami adalah..."></textarea>
         </div>
 
         <div class="mb-3">
             <label for="komponen_bisnis3" class="form-label">Permasalahan apa yang ingin dipecahkan?</label>
-            <textarea type="text" name="komponen_bisnis3" class="form-control" id="komponen_bisnis3" rows="3" placeholder="cont: Kecepatan Deteksi Tumor"></textarea>
+            <textarea required type="text" name="komponen_bisnis3" class="form-control" id="komponen_bisnis3" rows="3" placeholder="cont: Kecepatan Deteksi Tumor"></textarea>
         </div>
 
 
         <div class="mb-3">
             <label for="komponen_bisnis4" class="form-label">Bagaimana Sistem Anda dapat memecahkannya?</label>
-            <textarea type="text" name="komponen_bisnis4" class="form-control" id="komponen_bisnis4" rows="3" placeholder="cont: Sistem kami akan mendeteksi berdasarkan..."></textarea>
+            <textarea required type="text" name="komponen_bisnis4" class="form-control" id="komponen_bisnis4" rows="3" placeholder="cont: Sistem kami akan mendeteksi berdasarkan..."></textarea>
         </div>
 
     <div class="d-grid gap-2">

@@ -27,7 +27,13 @@ $deployment = query("SELECT * FROM deployment a WHERE a.id_sistem = '$id_sistem'
 
 $lp = query("SELECT * FROM laporan a WHERE a.id_sistem = '$id_sistem'")[0];
 
-$akhir = query("SELECT * FROM hasil_akhir a WHERE a.id_sistem = '$id_sistem' AND a.status = 'DALAM PROSES'")
+$item = query("SELECT *
+FROM sistem
+INNER JOIN latarbelakang_sistem ON sistem.id_sistem = latarbelakang_sistem.id_sistem
+INNER JOIN hasil_akhir ON sistem.id_sistem = hasil_akhir.id_sistem 
+WHERE hasil_akhir.status != 'DALAM PROSES' ");
+
+$status = query("SELECT * FROM hasil_akhir a WHERE a.id_sistem = '$id_sistem'")[0];
 
 
 
@@ -71,6 +77,16 @@ $akhir = query("SELECT * FROM hasil_akhir a WHERE a.id_sistem = '$id_sistem' AND
 
     <div class="content">
         <h2>Kelengkapan Pengajuan Sistem Berbasis Machine Learning</h2>
+
+        <center>
+            <div style="background-color: <?php echo ($status["status"] === 'DITOLAK') ? 'red' : 'green'; ?>; width:300px; border-radius:20px">
+                <center><h3 style="color:#fefefe; padding:3px">STATUS : <?php echo $status["status"]; ?></h3></center>
+            </div>
+        </center>
+       
+
+
+       
 
        
         <table width=100% id="tambah" border=0 style="margin-top:-15px; margin-bottom:40px">
@@ -266,22 +282,6 @@ $akhir = query("SELECT * FROM hasil_akhir a WHERE a.id_sistem = '$id_sistem' AND
             <!-- Akhir Laporan -->
 
         </table>
-
-        <form action="controller/ubah_status.php" method="POST">
-        <input type="hidden"name="id_sistem" class="form-control" id="id_sistem" value="<?php echo $id_sistem ?>">
-        <div class="tombol" style="display:flex; justify-content:center; margin-top:100px; margin-bottom:100px">
-        <button type="submit" name="setuju"  id="setuju" 
-            style=" background-color:#5893D4; text-decoration:none; color:#fff; border-radius:20px; padding:10px 50px; margin-right:100px;border: none; cursor:pointer">
-            SETUJUI
-        </button>
-
-        <button type="submit" name="tolak"  id="tolak"
-            style=" background-color:red; text-decoration:none; color:#fff; border-radius:20px; padding:10px 50px;border: none; cursor:pointer"">
-            TOLAK
-        </button>
-
-    
-        </div>
 
         </form>
 

@@ -11,20 +11,20 @@
     <h2>Buat Akun</h2>
     <form action="controller/tambah_user.php" method="post">
       <div class="input-box">
-          <input type="text" name="nama_sistem" placeholder="Nama Sistem" required>
+          <input required type="text" name="nama_sistem" placeholder="Nama Sistem" required>
       </div>
   
       <div class="input-box">
-        <input type="text" name="organisasi" placeholder="Nama Organisasi/Perusahaan" required>
+        <input required type="text" name="organisasi" placeholder="Nama Organisasi/Perusahaan" required>
       </div>
       <div class="input-box">
-        <input type="text" name="email" placeholder="Email Organisasi/Perusahaan" required>
+        <input required type="text" name="email" placeholder="Email Organisasi/Perusahaan" required>
       </div>
       <div class="input-box">
-        <input type="password" name="password" placeholder="Buat Password" required>
+        <input required type="password" name="password" placeholder="Buat Password" required>
       </div>
       <div class="policy">
-        <input type="checkbox">
+        <input required type="checkbox">
         <h3>Saya setuju dengan kebijakan dan privasi</h3>
       </div>
       <div class="input-box button">

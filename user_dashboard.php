@@ -49,6 +49,7 @@ $item = query("SELECT * FROM sistem
         <div class="menu">
             <p id="admin"><i class="fa-solid fa-user"></i><span>Selamat Datang,  <?php echo $nama?></span></p>
             <a href="user_dashboard.php" ><i class="fa-solid fa-gauge"></i><span>Dashboard</span></a>
+           
             <a href="tambah_pengajuan.php"><i class="fa-solid fa-plus"></i><span>Tambah Pengajuan</span></a>
             <a href="logout.php" id="logout"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a>  
         </div> 
@@ -56,6 +57,13 @@ $item = query("SELECT * FROM sistem
 
     <div class="content">
     <p id="sapaan" >Hallo <?php echo $nama ?></p>
+    <p>Jika Pengajuan Anda Ditolak, Silakan Tekan Tombol Berikut </p>
+
+    <form action="controller/reset_akun.php" method="POST">
+        <input type="hidden" name="id_sistem" value="<?php echo $id_sistem ?>">
+        <button type="submit" name="reset" style="background-color:red; border:none; padding:10px 20px; color:#fff; border-radius:20px; ">RESET</button>
+    </form>
+
     <h4 id="description">Buat Pengajuan Pengecekan Sistem Machine Learningmu Sekarang Juga Ya!</h4>
      
     <table border="0" border-collapse="collapse" width="100%" id="tampil" style="margin-bottom:50px">
